@@ -1,0 +1,11 @@
+const  signupModal=document.querySelector(".signup-form-wrapper");
+const  loginModal=document.querySelector(".Login-form-wrapper");
+const  signupBtn=document.querySelector(".signup-btn");
+const  signupX=document.querySelector(".signup-x");
+const  loginBtn=document.querySelector(".login-btn");
+const  loginX=document.querySelector(".login-x");
+const  formContainer=document.querySelector(".formContainer");
+signupBtn.addEventListener("click",()=>{signupModal.classList.add("display");formContainer.classList.add("disable");});
+signupX.addEventListener("click",()=>{signupModal.classList.remove("display");formContainer.classList.remove("disable");});
+loginBtn.addEventListener("click",()=>{loginModal.classList.add("display");formContainer.classList.add("disable");});
+loginX.addEventListener("click",()=>{loginModal.classList.remove("display");formContainer.classList.remove("disable");});
